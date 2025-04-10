@@ -1,0 +1,236 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 260 20% 98%;
+    --foreground: 260 25% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 260 25% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 260 25% 11%;
+
+    --primary: 270 95% 65%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 300 84% 80%;
+    --secondary-foreground: 300 10% 15%;
+
+    --muted: 260 20% 96%;
+    --muted-foreground: 260 15% 40%;
+
+    --accent: 24 94% 53%;
+    --accent-foreground: 260 25% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 260 20% 92%;
+    --input: 260 20% 92%;
+    --ring: 270 95% 65%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 260 25% 11%;
+    --foreground: 260 20% 98%;
+
+    --card: 260 25% 15%;
+    --card-foreground: 260 20% 98%;
+
+    --popover: 260 25% 15%;
+    --popover-foreground: 260 20% 98%;
+
+    --primary: 270 95% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 300 84% 65%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 260 25% 20%;
+    --muted-foreground: 260 20% 70%;
+
+    --accent: 24 94% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 260 25% 25%;
+    --input: 260 25% 25%;
+    --ring: 270 95% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-glass;
+  }
+  
+  .glass-card {
+    @apply bg-glass-gradient backdrop-blur-md border border-white/20 rounded-xl shadow-glass;
+  }
+  
+  .neon-border {
+    @apply border border-magic-primary shadow-neon;
+  }
+  
+  .markdown-body {
+    @apply prose max-w-none dark:prose-invert prose-headings:text-foreground prose-a:text-primary;
+  }
+
+  .typing-effect {
+    @apply overflow-hidden whitespace-nowrap border-r-2 border-primary animate-typing;
+  }
+  
+  .confetti {
+    @apply absolute w-2 h-2 animate-confetti;
+  }
+  
+  /* New animation classes */
+  .shake-animation {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  .flip-animation {
+    @apply transition-transform duration-700 hover:rotate-y-180 cursor-pointer;
+    transform-style: preserve-3d;
+  }
+  
+  .rainbow-text {
+    background-image: linear-gradient(to right, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow-animation 6s linear infinite;
+    background-size: 400% 100%;
+  }
+  
+  .particle-text {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .particle-text::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px);
+    background-size: 10px 10px;
+  }
+  
+  .spotlight-text {
+    position: relative;
+    color: transparent;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: spotlight 2s infinite linear;
+  }
+  
+  .emoji-rain {
+    position: relative;
+    min-height: 100px;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--secondary));
+}
+
+/* Editor styles */
+.cm-editor {
+  height: 100%;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+}
+
+.dark .cm-editor {
+  background-color: hsl(var(--card));
+  color: hsl(var(--foreground));
+}
+
+/* Typing animation classes */
+.typing-container {
+  display: inline-block;
+}
+
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid;
+  border-color: hsl(var(--primary));
+  animation: typing 3.5s steps(40, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: hsl(var(--primary)) }
+}
+
+/* New keyframe animations */
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+@keyframes rainbow-animation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes spotlight {
+  0% { background-position: -100% 0; }
+  100% { background-position: 100% 0; }
+}
+
+@keyframes floatingEmoji {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+}
