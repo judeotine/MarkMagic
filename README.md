@@ -1,5 +1,4 @@
 
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=200&section=header&text=MarkMagic&fontSize=80&fontAlignY=35&animation=fadeIn" alt="MarkMagic" width="100%"/>
   
@@ -21,158 +20,160 @@
   <p>
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=F745B5&center=true&vCenter=true&width=435&lines=Create+stunning+GitHub+profiles;Drag+and+drop+profile+sections;Built-in+animations+and+effects;AI-powered+profile+generator" alt="Typing SVG" />
   </p>
-
-  <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" alt="Banner" width="100%" style="border-radius:15px" />
 </div>
 
 <br />
 
-## 📸 Screenshots & Previews
+## 🖥️ Screen Previews
 
 <div align="center">
-  <h3>🖥️ Modern Clean Theme</h3>
-  <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&auto=format" alt="Modern Clean Theme" width="80%" style="border-radius:10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);" />
+  <h3>✨ Modern Dashboard Interface</h3>
+  <img src="public/1.png" alt="Dashboard Preview" width="80%" style="border: 1px solid #e1e4e8; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"/>
   
-  <h3>✨ Customizable Animations</h3>
-  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&auto=format" alt="Customizable Animations" width="80%" style="border-radius:10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); margin: 20px 0;" />
-  
-  <h3>🎨 Multiple Themes</h3>
-  <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200&auto=format" alt="Multiple Themes" width="80%" style="border-radius:10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);" />
+  <div style="display: flex; justify-content: space-between; margin: 40px 0; gap: 30px;">
+    <div style="flex: 1;">
+      <h3>🎨 Theme Customization</h3>
+      <img src="public/2.png" alt="Theme Customization" style="border: 1px solid #e1e4e8; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 100%;"/>
+    </div>
+    <div style="flex: 1;">
+      <h3>🛠️ Component Library</h3>
+      <img src="public/3.png" alt="Component Library" style="border: 1px solid #e1e4e8; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 100%;"/>
+    </div>
+  </div>
 </div>
 
-## ✨ Features
+## ✨ Key Features
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+  <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+    <h3>🎨 Drag-and-Drop Builder</h3>
+    <ul>
+      <li>Pre-designed templates (Neon, Minimalist, Hacker)</li>
+      <li>Modular components that snap into place</li>
+      <li>Real-time preview as you build</li>
+    </ul>
+  </div>
+  
+  <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+    <h3>🌀 Built-in Animations</h3>
+    <ul>
+      <li>Floating emojis and typing effects</li>
+      <li>Animated SVGs and CSS-powered gradients</li>
+      <li>Interactive hover effects</li>
+    </ul>
+  </div>
+  
+  <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+    <h3>🤖 AI-Powered Magic</h3>
+    <ul>
+      <li>README Wizard generates draft from questions</li>
+      <li>Auto-suggests badges and integrations</li>
+      <li>Content optimization suggestions</li>
+    </ul>
+  </div>
+</div>
+
+## 🛠️ Tech Stack
 
 <div align="center">
   <table>
     <tr>
-      <td width="50%" valign="top">
-        <h3>🎨 Drag-and-Drop Builder</h3>
-        <ul>
-          <li>Pre-designed templates (Neon, Minimalist, Hacker, Retro, Futuristic)</li>
-          <li>Drag sections (stats, skills, projects) like Lego blocks</li>
-        </ul>
-        <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" width="100%" />
+      <td align="center" width="96">
+        <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="48"/>
+        <br>React
       </td>
-      <td width="50%" valign="top">
-        <h3>🌀 Built-in Animations</h3>
-        <ul>
-          <li>Floating emojis (🎈✨), typing effects, and CSS-powered gradients</li>
-          <li>Animated SVGs (e.g., spinning gears ⚙️, pulsating buttons)</li>
-        </ul>
-        <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+      <td align="center" width="96">
+        <img src="https://techstack-generator.vercel.app/ts-icon.svg" alt="TypeScript" width="48"/>
+        <br>TypeScript
       </td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <h3>🤖 AI-Powered Magic</h3>
-        <ul>
-          <li>"README Wizard": Answer fun questions to generate a draft</li>
-          <li>Auto-suggest badges (GitHub stats, WakaTime, Spotify)</li>
-        </ul>
-        <img src="https://user-images.githubusercontent.com/74038190/213866269-5d00981c-7c98-46d7-8a8e-16f462f15227.gif" width="100%" />
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" width="48"/>
+        <br>Tailwind
       </td>
-      <td width="50%" valign="top">
-        <h3>📊 Live Integrations</h3>
-        <ul>
-          <li>Real-time GitHub stats (stars, commits) via API</li>
-          <li>Weather ☀️, Spotify 🎵, or Twitter 🐦 embeds</li>
-        </ul>
-        <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" />
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=vite" alt="Vite" width="48"/>
+        <br>Vite
       </td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <h3>🎮 Playful Interactivity</h3>
-        <ul>
-          <li>Clickable tabs (e.g., "Projects" | "About Me" | "Fun Facts")</li>
-          <li>Easter eggs (try typing /party → confetti explosion 🎉)</li>
-        </ul>
-      </td>
-      <td width="50%" valign="top">
-        <h3>🚀 One-Click Export</h3>
-        <ul>
-          <li>Copy-paste optimized Markdown (with HTML/CSS tricks)</li>
-          <li>Export as PNG (for LinkedIn/Discord)</li>
-        </ul>
+      <td align="center" width="96">
+        <img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="48"/>
+        <br>GitHub
       </td>
     </tr>
   </table>
 </div>
 
-## 💻 Live Preview
-
-<div align="center">
-  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&auto=format" alt="Live Preview" width="90%" style="border-radius:10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);" />
-  <p><em>Preview your README changes in real-time as you edit</em></p>
-</div>
-
 ## 🚀 Quick Start
 
-1. **Visit the app**: https://markmagic-app.vercel.app
+1. **Visit the app**: [https://markmagic.vercel.app/](https://markmagic.vercel.app/)
 2. **Choose a template**: Pick from several pre-designed themes
 3. **Customize content**: Fill in your details or use our AI assistant
-4. **Add animations**: Choose from various animated elements and effects
+4. **Add animations**: Choose from various animated elements
 5. **Preview your README**: See how it will look on GitHub
 6. **Export & use**: Copy the markdown or download as a file
 
-## 🧰 Tech Stack
+```bash
+# For local development:
+git clone https://github.com/judeotine/MarkMagic.git
+cd MarkMagic
+npm install
+npm run dev
+```
 
-<p align="center">
-  <a href="https://react.dev/">
-    <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  </a>
-  <a href="https://www.typescriptlang.org/">
-    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  </a>
-  <a href="https://tailwindcss.com/">
-    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  </a>
-  <a href="https://ui.shadcn.com/">
-    <img src="https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcnui&logoColor=white" alt="shadcn/ui" />
-  </a>
-  <a href="https://vitejs.dev/">
-    <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-  </a>
-</p>
+## 💡 Creative Profile Ideas
 
-## 📝 Example README Ideas
-
-- **"Currently Listening to" 🎧** with live Spotify status
-- **ASCII Art T-Rex 🦖** that "runs" when you hover
-- **Fake iPhone notification 📱**: "New PR: Fixed everything (jk)."
-- **Daily dev meme 😂** refreshed via GitHub Actions
+<div style="background: #f5f3ff; padding: 20px; border-radius: 10px; border-left: 4px solid #8b5cf6; margin: 20px 0;">
+  <h3>🎨 Make Your Profile Stand Out</h3>
+  <ul>
+    <li><strong>Live coding stats</strong> with WakaTime integration ⌨️</li>
+    <li><strong>Interactive portfolio</strong> with project showcases 🖼️</li>
+    <li><strong>Daily dev meme</strong> refreshed via GitHub Actions 😂</li>
+    <li><strong>Fake terminal</strong> that responds to commands 💻</li>
+  </ul>
+</div>
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to open a pull request or submit an issue.
+We welcome contributions from the community! Here's how you can help:
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
 5. Open a Pull Request
+
+Please make sure to update tests as appropriate and follow our code style guidelines.
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Support
+## 💖 Support the Project
 
-If you like this project, please give it a ⭐ on [GitHub](https://github.com/judeotine/MarkMagic)!
+If you find MarkMagic useful, please consider:
 
-<div align="center">
-  <a href="https://github.com/judeotine/MarkMagic">
-    <img src="https://img.shields.io/badge/Star_on_GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Star on GitHub" />
+<div align="center" style="margin: 20px 0;">
+  <a href="https://github.com/judeotine/MarkMagic/stargazers">
+    <img src="https://img.shields.io/badge/⭐_Give_it_a_Star-100000?style=for-the-badge&logo=github&logoColor=white" alt="Star on GitHub" />
+  </a>
+  <a href="https://github.com/judeotine/MarkMagic/issues">
+    <img src="https://img.shields.io/badge/🐞_Report_an_Issue-100000?style=for-the-badge&logo=github&logoColor=white" alt="Report Issues" />
   </a>
 </div>
 
-## 👨‍💻 Developer
+## ✨ Meet the Creator
 
 <div align="center">
-  <p>Developed with ❤️ by <a href="https://judeotine.vercel.app/">Jude Otine</a></p>
+  <p>Developed with by <a href="https://judeotine.vercel.app/">Jude Otine</a></p>
+  <div>
+    <a href="https://github.com/judeotine">
+      <img src="https://img.shields.io/badge/-@judeotine-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    </a>
+    <a href="https://twitter.com/judeotine">
+      <img src="https://img.shields.io/badge/-@judeotine-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
+    </a>
+  </div>
 </div>
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=100&section=footer" width="100%" alt="Footer Wave">
 </div>
-
